@@ -1,0 +1,48 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 22px;
+  background-color: #f8f6f1;
+  color: #555550;
+  margin: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.todos {
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.1em;
+}
+
+.todos li {
+  border-left: 6px double #ddd;
+  margin: 8px 0;
+  padding-left: 10px;
+}
+
+input#todo {
+  font-size: 1.75em;
+  width: 100%;
+}
+
+input, button, .btn {
+  font-size: 1em;
+  padding: 3px 10px;
+  border-radius: 0;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #666;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

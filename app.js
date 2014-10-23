@@ -9,7 +9,7 @@ $(function(){
     ;
 
     if (hash == '') {
-      window.location.hash = '#/default';
+      window.randomList();
       return;
     }
 

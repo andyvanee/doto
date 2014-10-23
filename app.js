@@ -1,3 +1,7 @@
+var randomList = function(){
+  window.location.hash = '#/'+Math.random().toString(36).substring(7);
+}
+
 $(function(){
   var messages = new Firebase('https://flickering-inferno-3391.firebaseio.com/messages')
   ,   room
@@ -9,7 +13,7 @@ $(function(){
     ;
 
     if (hash == '') {
-      window.randomList();
+      randomList();
       return;
     }
 
@@ -38,8 +42,4 @@ $(function(){
   function displayTodo(todo, active) {
     $('#todos').append($('<li/>').text(todo));
   };
-
-  window.randomList = function(){
-    window.location.hash = '#/'+Math.random().toString(36).substring(7);
-  }
 });

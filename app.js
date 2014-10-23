@@ -19,7 +19,13 @@ $(function(){
 
     room = messages.child(hash);
 
-    $('#email-to-friend').attr('href', 'mailto:?subject='+encodeURI('Collaborate on my doto list!')+'&body='+encodeURI(window.location.href));
+    $('#email-to-friend').attr(
+      'href',
+      'mailto:?subject='
+      + encodeURI('Collaborate on my doto list!')
+      + '&body='
+      + encodeURI(window.location.href)
+    );
 
     $('#todos').empty();
 

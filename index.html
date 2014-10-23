@@ -10,10 +10,12 @@
 <body>
   <div class="container">
     <h1>doto</h1>
-    <input type="text" id="todo" placeholder="type here...">
     <ul id="todos" class="todos"></ul>
-    <button onclick="randomList()">New List</button>
-    <a id="email-to-friend" class="btn" target="_blank">Email to a friend</a>
+    <input type="text" id="todo" placeholder="+ List item">
+    <div class="actions">
+      <button onclick="randomList()">New List</button>
+      <a id="email-to-friend" class="btn" target="_blank">Email to a friend</a>
+    </div>
   </div>
 
   <script src="jquery.min.js"></script>

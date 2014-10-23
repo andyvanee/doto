@@ -5,6 +5,7 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 22px;
+  font-weight: 300;
   background-color: #f8f6f1;
   color: #555550;
   margin: 0;
@@ -13,13 +14,22 @@ body {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px 30px;
+  background-color: white;
+}
+
+h1 {
+  margin: 0;
+  line-height: 2em;
+  font-size: 40px;
+  color: #d96;
 }
 
 .todos {
   padding-left: 0;
   list-style: none;
   line-height: 1.1em;
+  margin: 0;
 }
 
 .todos li {
@@ -29,12 +39,24 @@ body {
 }
 
 input#todo {
-  font-size: 1.75em;
+  font-size: 1.25em;
+  padding: 7px 10px;
   width: 100%;
 }
 
+input#todo:focus {
+  outline: none;
+  border-color: #d96;
+}
+
+.actions {
+  margin-top: 2em;
+}
+
 input, button, .btn {
+  font-family: inherit;
   font-size: 1em;
+  font-weight: 300;
   padding: 3px 10px;
   border-radius: 0;
   border: 1px solid #ddd;
